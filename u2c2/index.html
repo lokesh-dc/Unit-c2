@@ -12,38 +12,35 @@
       }
 
       #banner{
-        width:80%;
+        width:90%;
         margin:auto;
         border-radius: 20px;
         background-color:#343ea2 ;
         display:flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
       }
-      #banner>div{
-        width:30%;
-      }
+      
       #banner>div:first-child{
         color: white;
-        line-height: 30px;
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
+        padding:100px 0 0 50px;
+        line-height: 40px;
+        font-size: 20px;
       }
       #banner>div>button{
-        width:30%;
+        font-weight: bold;
         border-radius: 10px;
         border:none;
         padding:8px 20px; 
       }
       #banner>div>img{
-        width:100%;
+        width:75%;
       }
 
       /* service section */
 
       #services{
-        width:80%;
+        width:90%;
         margin: auto;
         margin-top:40px;
         display: grid;
@@ -74,7 +71,7 @@
 
        /* works section */
        #works{
-        width:80%;
+        width:90%;
         margin:auto; 
         margin-top:40px;
         text-align: center;
@@ -104,17 +101,11 @@
       @media only screen and (min-width: 500px) and (max-width: 768px) {
         #banner{
           flex-direction: column;
-          text-align: center;
+          justify-content:flex-start;
+
         }
-        #banner>div{
-          width:100%;
-          }
-          #banner>div:first-child{
-            align-items: center;;
-          }
         #banner>div>img{
-          margin-top:20px;
-          width:50%;
+          width:100%;
         }
 
       /* service section */
@@ -134,16 +125,15 @@
       @media only screen and (min-width: 320px) and (max-width: 499px) {
         #banner{
           flex-direction: column;
+          font-size: 10px;
         }
         #banner>div:first-child{
-            align-items: center;;
-          }
-        #banner>div{
-          width:100%;
-          text-align: center;
-        }
+        padding:40px 0 0 20px;
+        line-height: 25px;
+        font-size: 10px;
+      }
         #banner>div>img{
-          width:50%;
+          width:100%;
         }
 
         /* service section */
